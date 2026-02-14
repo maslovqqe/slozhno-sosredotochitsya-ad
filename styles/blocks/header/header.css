@@ -35,9 +35,12 @@
     border: 1px solid rgb(from var(--secondary-color) r g b / 50%);
 }
 
+.header__theme-menu-button:focus {
+    outline: none;
+}
+
 .header__theme-menu-button:focus-visible {
     border-bottom: 1px solid var(--secondary-color);
-    outline: none;
 }
 
 .header__theme-menu-button_active {

@@ -14,7 +14,7 @@
   --bg-color: #000028;
 
   /* Miscellaneous */
-  --bg-image: url("/images/cover-image-dark.png");
+  --bg-image: url("../images/cover-image-dark.png");
   --article-gap: 50px;
   --gallery-gap: 10px;
   --layout-gap: 50px;

@@ -80,7 +80,10 @@
   border-bottom: 1px solid var(--main-color);
 }
 
-.link-decoration:focus-visible {
+.link-decoration:focus {
   outline: none;
+}
+
+.link-decoration:focus-visible {
   border: 1px solid var(--main-color);
 }
