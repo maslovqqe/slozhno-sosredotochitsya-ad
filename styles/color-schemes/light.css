@@ -1,0 +1,25 @@
+:root.theme-light {
+  --main-color: #353430;
+  --secondary-color: #FF8DCB;
+  --accent-color: #FFC2E6;
+  --bg-color: #FFF1F7;
+  --bg-image: url("/images/cover-image-light.png")
+}
+
+.theme-light .title-decor {
+  color: var(--main-color);
+}
+
+@media (prefers-color-scheme: light) {
+  :root.theme-auto {
+    --main-color: #353430;
+    --secondary-color: #FF8DCB;
+    --accent-color: #FFC2E6;
+    --bg-color: #FFF1F7;
+    --bg-image: url("/images/cover-image-light.png")
+  }
+
+  :root.theme-auto .title-decor {
+    color: var(--main-color);
+  }
+}

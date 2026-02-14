@@ -1,0 +1,30 @@
+.header__lamp {
+    position: absolute;
+    inset-block-start: 0;
+    inset-inline-end: 0;
+    padding-inline: 8px;
+    color: var(--secondary-color);
+    user-select: none;
+}
+
+:root.theme-light .header__lamp {
+    display: none;
+}
+
+@media (prefers-color-scheme: light) {
+    :root.theme-auto .header__lamp {
+        display: none;
+    }
+}
+
+.header__lamp::after {
+    content: "";
+    display: inline-block;
+    inline-size: 9px;
+    block-size: 9px;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    top: calc(50% - 4.5px);
+    margin-inline-start: 10px;
+    box-shadow: 0px 0px 4px 2px var(--secondary-color);
+}

@@ -1,0 +1,7 @@
+:root.theme-dark {
+  --main-color: #F1B2CE;
+  --secondary-color: #FF0070;
+  --accent-color: #DB00FF;
+  --bg-color: #000028;
+  --bg-image: url("/images/cover-image-dark.png")
+}

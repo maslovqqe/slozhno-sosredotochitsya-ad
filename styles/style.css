@@ -1,5 +1,86 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+  background-color: var(--bg-color);
+  background-image: var(--bg-image);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  font-family: var(--main-font);
+  font-size: var(--main-font-size);
+  color: var(--main-color);
+  line-height: var(--line-height);
+  display: flex;
+  flex-direction: column;
+  gap: var(--layout-gap);
+  overflow-inline: hidden;
+  scrollbar-gutter: stable;
+}
+
+.h1-title {
+  line-height: 0.83;
+  font-size: var(--h1-font-size);
+  color: var(--accent-color);
+  text-shadow: 4px 4px 0 var(--secondary-color);
+  user-select: none;
+}
+
+.h2-title {
+  color: var(--secondary-color);
+  font-size: var(--main-font-size);
+}
+
+.h3-title {
+  color: var(--secondary-color);
+  font-size: var(--main-font-size);
+}
+
+.h4-title {
+  color: var(--secondary-color);
+  font-size: var(--main-font-size);
+  font-weight: var(--normal-font-weight);
+}
+
+.title-decor {
+  color: var(--bg-color);
+  background-color: var(--secondary-color);
+}
+
+.decorated-zone::after {
+  content: "";
+  position: absolute;
+  inset-inline-end: 0;
+  inset-block-start: 0;
+  inline-size: 25px;
+  block-size: 25px;
+  border: 1px solid var(--secondary-color);
+  border-inline-start-style: none;
+  border-block-end-style: none;
+}
+
+.decorated-zone::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  inset-block-end: 0;
+  inline-size: 25px;
+  block-size: 25px;
+  border: 1px solid var(--secondary-color);
+  border-inline-end-style: none;
+  border-block-start-style: none;
+}
+
+.link-decoration {
+  text-decoration: none;
+  text-shadow: 2px 2px var(--secondary-color);
+}
+
+.link-decoration:hover {
+  border-bottom: 1px solid var(--main-color);
+}
+
+.link-decoration:focus-visible {
+  outline: none;
+  border: 1px solid var(--main-color);
 }
