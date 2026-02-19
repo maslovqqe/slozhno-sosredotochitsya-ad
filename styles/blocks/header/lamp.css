@@ -1,7 +1,7 @@
 .header__lamp {
     position: absolute;
-    inset-block-start: 0;
-    inset-inline-end: 0;
+    inset-block-start: var(--layout-padding);
+    inset-inline-end: var(--layout-padding);
     padding-inline: 8px;
     color: var(--secondary-color);
     user-select: none;

@@ -3,8 +3,8 @@
     grid-template-rows: 1fr;
     align-items: center;
     position: relative;
-    margin: var(--layout-padding);
-    height: calc(100dvh - 2 * var(--layout-padding));
+    padding: var(--layout-padding);
+    height: 100dvh;
 }
 
 .footer .footer__heading {

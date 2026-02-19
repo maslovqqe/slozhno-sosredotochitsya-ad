@@ -50,8 +50,8 @@
 .decorated-zone::after {
   content: "";
   position: absolute;
-  inset-inline-end: 0;
-  inset-block-start: 0;
+  inset-inline-end: var(--layout-padding);
+  inset-block-start: var(--layout-padding);
   inline-size: 25px;
   block-size: 25px;
   border: 1px solid var(--secondary-color);
@@ -62,8 +62,8 @@
 .decorated-zone::before {
   content: "";
   position: absolute;
-  inset-inline-start: 0;
-  inset-block-end: 0;
+  inset-inline-start: var(--layout-padding);
+  inset-block-end: var(--layout-padding);
   inline-size: 25px;
   block-size: 25px;
   border: 1px solid var(--secondary-color);

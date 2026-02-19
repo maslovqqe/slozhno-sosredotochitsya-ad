@@ -5,7 +5,7 @@
   --normal-font-weight: normal;
   --h1-font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   --main-font-size: 18px;
-  --line-height: 23.4px
+  --line-height: 23.4px;
 
   /* Colors */
   --main-color: #F1B2CE;
@@ -17,15 +17,16 @@
   --bg-image: url("../images/cover-image-dark.png");
   --article-gap: 50px;
   --gallery-gap: 10px;
-  --layout-gap: 50px;
+  --layout-gap: 40px;
   --layout-padding: 10px;
 }
 
-@media (width > 768px) {
+@media (width >= 768px) {
   :root {
+    --h1-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
     --article-gap: 80px;
     --gallery-gap: 20px;
-    --layout-gap: 70px;
+    --layout-gap: 60px;
     --layout-padding: 20px;
   }
 }

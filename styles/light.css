@@ -3,7 +3,7 @@
   --secondary-color: #FF8DCB;
   --accent-color: #FFC2E6;
   --bg-color: #000;
-  --bg-image: url("../images/cover-image-light.png")
+  --bg-image: url("../images/cover-image-light.png");
 }
 
 .theme-light .title-decor {
@@ -16,7 +16,7 @@
     --secondary-color: #FF8DCB;
     --accent-color: #FFC2E6;
     --bg-color: #000;
-    --bg-image: url("../images/cover-image-light.png")
+    --bg-image: url("../images/cover-image-light.png");
   }
 
   :root.theme-auto .title-decor {
